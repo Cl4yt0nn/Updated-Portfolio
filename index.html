@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://kit.fontawesome.com/28d4a90981.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./Portfolio.png">
+</head>
+<body>
+    <nav>
+        <div onclick="changePage(0)">Home</div>
+        <div onclick="changePage(1)">Projects</div>
+        <div onclick="changePage(2)">Contact Me</div>
+    </nav>
+
+    <div id="home" class="page">
+        <div id="pText">
+            <div>PORTFOLIO</div>
+            <div>PORTFOLIO</div>
+            <div>PORTFOLIO</div>
+            <div>PORTFOLIO</div>
+            <div>PORTFOLIO</div>
+        </div>
+        <div id="desc">My name is Clayton Hoag. I'm a first year coding student at West-MEC Central Campus. I know web-based coding, such as HTML, CSS, JavaScript, and some of the extensions to these languages, like jQuery and Bootstrap. This website will be based on displaying the projects I've made over this year.</div>
+        <div id="links">
+            <i class="fa-brands fa-instagram fa-2x"></i>
+            <i class="fa-brands fa-facebook-f fa-2x"></i>
+            <i class="fa-brands fa-twitter fa-2x"></i>
+            <i class="fa-brands fa-youtube fa-2x"></i>
+            <i class="fa-brands fa-github fa-2x"></i>
+        </div>
+    </div>
+    
+    <div id="projects" class="page">
+        <div id="grid">
+            <div class="a" onclick="window.open('https://cl4yt0nn.github.io/Minesweeper/','_blank')"><img src="./minesweeper.png"><p>Minesweeper</p></div>
+            <div class="a" onclick="window.open('https://cl4yt0nn.github.io/JQuery-Website/','_blank')"><img src="./jquery.png"><p>JQuery Website</p></div>
+            <div class="a" onclick="window.open('https://cl4yt0nn.github.io/pandaAnimation/','_blank')"><img src="./panda.png"><p>CSS Animation</p></div>
+            <div class="a" onclick="window.open('https://cl4yt0nn.github.io/photo-gallery/','_blank')"><img src="./photogallery.png"><p>Photo Gallery</p></div>
+            <div class="b" onclick="window.open('https://cl4yt0nn.github.io/quizApp/','_blank')"><img src="./quiz.png"><p>Quiz</p></div>
+            <div class="b" onclick="window.open('https://cl4yt0nn.github.io/Resume/','_blank')"><img src="./resume.png"><p>Resume</p></div>
+            <div class="b" onclick="window.open('https://cl4yt0nn.github.io/Simon/','_blank')"><img src="./simon.png"><p>Simon</p></div>
+            <div class="b" onclick="window.open('https://cl4yt0nn.github.io/formSpicy.github.io/','_blank')"><img src="./spiceform.png"><p>Sample Website</p></div>
+            <div class="c" onclick="window.open('https://cl4yt0nn.github.io/Calculator/','_blank')"><img src="./calc.png"><p>Calculator</p></div>
+            <div class="c" onclick="window.open('https://cl4yt0nn.github.io/Guess-The-Number/','_blank')"><img src="./guessthenumber.PNG"><p>Number Guessing</p></div>
+            <div class="c" onclick="window.open('https://cl4yt0nn.github.io/flexboxTemplate1/','_blank')"><img src="./flexbox.PNG"><p>Flexbox Template</p></div>
+            <div class="c" onclick="window.open('https://cl4yt0nn.github.io/To-Do-List/','_blank')"><img src="./todo.PNG"><p>To-Do List</p></div>
+            <div class="d" onclick="window.open('https://cl4yt0nn.github.io/css-filters/','_blank')"><img src="./cssfilters.PNG"><p>CSS Filters</p></div>
+            <div class="d" onclick="window.open('https://cl4yt0nn.github.io/bootstrap/','_blank')"><img src="./bootstrap.PNG"><p>Bootstrap</p></div>
+            <div class="d" onclick="window.open('https://cl4yt0nn.github.io/card/','_blank')"><img src="./card.png"><p>Card Animation</p></div>
+            <div class="d" onclick="window.open('https://github.com/Cl4yt0nn/svg','_blank')"><img src="./svg.PNG"><p>SVG</p></div>
+        </div>
+    </div>
+
+    <div id="contact" class="page">
+        <form>
+            <input type="email" id="email" placeholder="Email..."><br><br>
+            <input type="text" id="subject" placeholder="Subject..."><br><br>
+            <textarea id="message" placeholder="Enter message..." rows="8"></textarea><br><br>
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </div>
+</body>
+<script src="./index.js"></script>                                    
+</html>
